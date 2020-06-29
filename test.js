@@ -1,13 +1,7 @@
-import test from 'ava';
-import unicornFun from '.';
+import test from 'ava'
+import pickEmoji from '.'
+import emojis from './emojis'
 
 test('main', t => {
-	t.throws(() => {
-		unicornFun(123);
-	}, {
-		instanceOf: TypeError,
-		message: 'Expected a string, got number'
-	});
-
-	t.is(unicornFun('unicorns'), 'unicorns & rainbows');
-});
+  t.true(emojis.includes(pickEmoji()))
+})

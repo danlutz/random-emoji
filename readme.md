@@ -1,71 +1,24 @@
-# node-module-boilerplate
+# `random-emoji` [![Build Status](https://travis-ci.com/lukewhrit/random-emoji.svg?branch=master)](https://travis-ci.com/lukewhrit/random-emoji)
 
-> Boilerplate to kickstart creating a Node.js module
-
-This is what I use for [my own modules](https://www.npmjs.com/~sindresorhus).
-
-Also check out [`node-cli-boilerplate`](https://github.com/sindresorhus/node-cli-boilerplate).
-
-
-## Getting started
-
-**Click the "Use this template" button.**
-
-Alternatively, create a new directory and then run:
-
-```
-$ curl -fsSL https://github.com/sindresorhus/node-module-boilerplate/archive/master.tar.gz | tar -xz --strip-components=1
-```
-
-There's also a [Yeoman generator](https://github.com/sindresorhus/generator-nm).
-
-
----
-
-**Remove everything from here and above**
-
----
-
-
-# unicorn-fun [![Build Status](https://travis-ci.com/YOUR-GITHUB-USERNAME/unicorn-fun.svg?branch=master)](https://travis-ci.com/YOUR-GITHUB-USERNAME/unicorn-fun)
-
-> My awesome module
-
+> Simple module to get random emojis strings.
 
 ## Install
 
 ```
-$ npm install unicorn-fun
+$ npm install @lukewhrit/random-emoji
 ```
-
 
 ## Usage
 
 ```js
-const unicornFun = require('unicorn-fun');
+const getEmoji = require('@lukewhrit/random-emoji')
 
-unicornFun('unicorns');
-//=> 'unicorns & rainbows'
+getEmoji()
+//=> '😀'
 ```
-
 
 ## API
 
-### unicornFun(input, options?)
+### getEmoji()
 
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+Returns a pseudo-random emoji from the list defined in [`emojis.js`](./emojis.js).

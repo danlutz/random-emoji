@@ -1,9 +1,12 @@
-'use strict';
+'use strict'
 
-module.exports = (input, {postfix = 'rainbows'} = {}) => {
-	if (typeof input !== 'string') {
-		throw new TypeError(`Expected a string, got ${typeof input}`);
-	}
+const emojis = require('./emojis')
 
-	return `${input} & ${postfix}`;
-};
+/**
+ * Picks a random emoji from list and returns one.
+ */
+module.exports = () => {
+  const num = Math.floor(Math.random() * emojis.length)
+
+  return emojis[num]
+}
