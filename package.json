@@ -1,6 +1,6 @@
 {
   "name": "@lukewhrit/random-emoji",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Picks a random emoji from a list",
   "license": "MIT",
   "repository": "lukewhrit/random-emoji",
