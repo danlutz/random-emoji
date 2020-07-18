@@ -24,7 +24,7 @@
     "random"
   ],
   "devDependencies": {
-    "ava": "^2.1.0",
+    "ava": "^3.10.1",
     "cz-conventional-changelog": "3.2.0",
     "standard": "^14.3.4"
   },
