@@ -1,6 +1,6 @@
-import test from 'ava'
-import pickEmoji from '.'
-import emojis from './emojis'
+const test = require('ava')
+const pickEmoji = require('.')
+const emojis = require('./emojis')
 
 test('main', t => {
   t.true(emojis.includes(pickEmoji()))
