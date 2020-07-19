@@ -1,5 +1,5 @@
 {
-  "name": "@lukewhrit/random-emoji",
+  "name": "get-random-emoji",
   "version": "1.0.0",
   "description": "Picks a random emoji from a list",
   "license": "MIT",
