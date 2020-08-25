@@ -25,7 +25,7 @@
   ],
   "devDependencies": {
     "ava": "^3.10.1",
-    "cz-conventional-changelog": "3.2.0",
+    "cz-conventional-changelog": "3.2.1",
     "standard": "^14.3.4"
   },
   "config": {
